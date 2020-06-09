@@ -12,11 +12,17 @@ set_email("privalki@tcd.ie") # set your registered email
 irl8 <- import_country(country = "Ireland",
                       rounds = c(8),
                       format = 'spss')
+irl7 <- import_country(country = "Ireland",
+                       rounds = c(7),
+                       format = 'spss')
+irl6 <- import_country(country = "Ireland",
+                       rounds = c(6),
+                       format = 'spss')
 
 
 # explore and label -------------------------------------------------------
 
-look_for(irl8, "income")
+look_for(irl7, "income")
 look_for(irl8, "gender")
 look_for(irl8, "marital")
 look_for(irl8, "years")
@@ -94,6 +100,6 @@ out %>%
   labs(title = "When asked whether large differences \nin income are acceptable to reward talents and \nefforts, most disagree.",
        subtitle = "Even when we split the outcome by income decile, \nmost disagree.",
        y="Proportion of income decile",
-       x="Income decile persone belongs to",
+       x="",
        fill="",
        caption = "Source: European Social Survey. \nPlot: @privlko")
